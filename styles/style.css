@@ -25,6 +25,7 @@
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: "wght" var(--font-weight-regular, 400);
 }
 
 .header {
@@ -138,6 +139,7 @@
   font-weight: 700;
   line-height: 21.78px;
   text-align: left;
+  font-variation-settings: "wght" var(--font-weight-large, 700);
 }
 
 .card {
@@ -218,17 +220,14 @@
 .card__icon-button {
   border: none;
   outline: none;
+  height: 38px;
+  background-color: var(--background-color);
 }
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--main-color);
   outline-offset: -2px;
   transition: 0.3s ease;
-}
-
-.card__icon-button {
-  height: 38px;
-  background-color: var(--background-color);
 }
 
 .card__like-button {
@@ -369,11 +368,11 @@
 }
 
 .support-image {
-  filter: contrast(200%) blur(3px) hue-rotate(180px);
+  filter: contrast(200%) blur(3px);
 }
 
 .concentration-image {
-  filter: invert(1);
+  filter: brightness(300%);
 }
 
 .motivation-image {

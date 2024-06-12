@@ -245,7 +245,6 @@
 
 .button-save {
   margin: 54px 35px 102px;
-  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   width: 306px;
   height: 80px;
   display: flex;

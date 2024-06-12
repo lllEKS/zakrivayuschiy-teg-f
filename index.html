@@ -11,21 +11,14 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
-    <link rel="icon" href="../images/favicon.ico" />
-    <link
-      rel="icon"
-      href="../zakrivayuschiy-teg-f/svg/favicon.svg"
-      type="image/svg+xml"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="../zakrivayuschiy-teg-f/svg/favicon.svg"
-    />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="icon" href=".svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./svg/favicon.svg" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <span class="header-title">&lt;/html&gt;</span>
+      <a class="header-title">&lt;/html&gt;</a>
       <h1 class="header-subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -53,6 +46,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="main">
       <ul class="cards-list">
         <li class="cards-item">
@@ -65,27 +59,28 @@
             <div class="card-image__wrapper">
               <span class="watermark">Вдохновение</span>
               <img
-                class="card-image inspiration-image"
-                src="./images/1.jpg"
+                class="card-image filter-contrast"
+                src="./images/2020-01-10-419_97150-1_311368.webp"
                 alt="Мужчина стоит на горе и смотрит в даль"
               />
             </div>
             <div class="card-content">
               <p class="card-text">
                 Это было самое начало пути. На этом этапе важно было
-                проникнуться основами и настроиться на учёбу. И,<br />
-                возможно, подумать, как новые знания могут повлиять на ваше
+                проникнуться основами и настроиться на учёбу. И,
+                возможно,подумать, как новые знания могут повлиять на ваше
                 будущее.
               </p>
-              <p class="card-text card-text-memories">
+              <p class="card-text">
                 Начало обучения сопровождалось мечтами о новой профессии и
                 работе, а так же понимании того что предстоит много работать для
                 этого.
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -117,7 +112,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -131,7 +126,7 @@
             <div class="card-image__wrapper">
               <span class="watermark">Депрессия</span>
               <img
-                class="card-image depression-imege"
+                class="card-image filter-sepia"
                 src="./images/scale_1200.png"
                 alt="Мужчина сидит за столом со стопками книг"
               />
@@ -145,15 +140,16 @@
                 вопросы: с чего начать? а вдруг будет слишком сложно? что, если
                 я не справлюсь?
               </p>
-              <p class="card-text card-text-memories">
+              <p class="card-text">
                 Первый спринт давался тяжело. Думал что не справлюсь, не успею в
                 дедлайн, стало меньше свободного времени, так как почти всё
                 свободное время приходилось уделять учёбе.
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -185,7 +181,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -210,14 +206,15 @@
                 Радость могла быстро померкнуть и смениться ожиданием провала.
                 Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
               </p>
-              <p class="card-text card-text-memories">
+              <p class="card-text">
                 ДА! У меня получилось первый проект сдан, оказывается я не так
                 безнадёжен.
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -249,7 +246,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -263,7 +260,7 @@
             <div class="card-image__wrapper">
               <span class="watermark">Адаптация</span>
               <img
-                class="card-image adaptation-image"
+                class="card-image filter-blur"
                 src="./images/scale_1201231230.png"
                 alt="Мужчина програмиирует за ноутбуком"
               />
@@ -276,14 +273,15 @@
                 вовсе и не подвержены перфекционизму и вместо того, чтобы
                 сделать идеально, старались просто сделать.
               </p>
-              <p class="card-text card-text-memories">
+              <p class="card-text">
                 Второй спринт дался гораздо легче первого, более менее удалось
                 распределить свободное время что бы успевать учиться.
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -315,7 +313,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -329,7 +327,7 @@
             <div class="card-image__wrapper">
               <span class="watermark">Поддержка</span>
               <img
-                class="card-image support-image"
+                class="card-image filter-multiple"
                 src="./images/YA-sama-byila-takaya.png"
                 alt="Семья держится за руки на фоне заката"
               />
@@ -343,13 +341,14 @@
                 поддавался. Осваивать что-то новое легче, когда рядом есть
                 единомышленники, не правда ли?
               </p>
-              <p class="card-text card-text-memories">
+              <p class="card-text">
                 Поддержка семьи, одногруппников и наставников очень важна.
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -381,7 +380,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -395,7 +394,7 @@
             <div class="card-image__wrapper">
               <span class="watermark">Сосредоточенность</span>
               <img
-                class="card-image concentration-image"
+                class="card-image filter-brightness"
                 src="./images/16389.png"
                 alt="Пазлы"
               />
@@ -406,13 +405,14 @@
                 момент вам могло показаться, что решения просто иссякли. Значит,
                 пришло время посмотреть на задачу под другим углом.
               </p>
-              <p class="card-text card-text-memories">
+              <p class="card-text">
                 Учёба на курсе становится частью твоей жизни
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -444,7 +444,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -458,7 +458,7 @@
             <div class="card-image__wrapper">
               <span class="watermark">Мотивация</span>
               <img
-                class="card-image motivation-image"
+                class="card-image filter-saturate"
                 src="./images/chelovek_odinochestvo_priroda_192570_1920x1080.jpg"
                 alt="Мужчина смотрит на озеро, лес и горы"
               />
@@ -476,8 +476,9 @@
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -509,7 +510,7 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -523,7 +524,7 @@
             <div class="card-image__wrapper">
               <span class="watermark">Только начало пути</span>
               <img
-                class="card-image path-image"
+                class="card-image filter-hue-rotate"
                 src="./images/_normal.jpg"
                 alt="Млечный путь"
               />
@@ -543,8 +544,9 @@
               </p>
             </div>
             <footer class="footer-card">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
+                  aria-hidden="true"
                   class="svg like-icon"
                   width="39"
                   height="36"
@@ -576,46 +578,39 @@
                   />
                 </svg>
               </button>
-              <button class="button card__like-button">
+              <button class="button card__like-button" type="button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
           </article>
         </li>
       </ul>
-    </main>
-    <footer class="footer">
-      <button
-        class="button footer-button"
-        type="button"
-        onclick="window['modal'].showModal();"
-        aria-controls="modal"
-      >
-        <svg
-          width="29"
-          height="29"
-          viewBox="0 0 29 29"
-          class="svg floppy-footer"
+      <article class="button-memory">
+        <button
+          class="button button-save"
+          type="button"
+          onclick="window['modal'].showModal();"
+          aria-controls="modal"
         >
-          <use href="./svg/floppy.svg#floppy-footer"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
+          <svg width="29" height="29" viewBox="0 0 29 29" class="svg floppy">
+            <use href="./svg/floppy.svg#floppy-footer"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </article>
+    </main>
+
     <dialog class="modal" id="modal">
       <div class="modal-content">
         <svg width="39" height="39" viewBox="0 0 29 29" class="modal-icon">
           <use href="./svg/floppy.svg#floppy-footer"></use>
         </svg>
-        <p class="modal-text">
-          Вставьте<br />
-          дискету, чтобы продолжить
-        </p>
+        <p class="modal-text">Вставьте дискету, чтобы продолжить</p>
       </div>
       <form method="dialog">
         <button
           class="button modal-button"
-          type="button"
+          type="submit"
           onclick="window['modal'].close()"
         >
           <span class="button__text">ок</span>

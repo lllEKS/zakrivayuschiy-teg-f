@@ -11,6 +11,7 @@
   --color-hover: rgba(0, 0, 0, 0.6);
   --button-hover-color: #fff;
   --contour-heart-color: #000;
+  --button-text-color: #fff;
   --background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0px 2px,

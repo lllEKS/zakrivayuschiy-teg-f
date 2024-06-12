@@ -13,6 +13,7 @@
   --color-hover: rgba(0, 0, 0, 0.5);
   --font-weight-regular: 400;
   --font-weight-large: 700;
+  --button-text-color: #fff;
   --background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0px 2px,
@@ -35,6 +36,7 @@
     --button-hover-color: #000;
     --contour-heart-color: #00cc14;
     --filling-heart: #ff0000;
+    --button-text-color: #00cc14;
     --background-image: repeating-linear-gradient(
         to right,
         #000 0px 2px,
@@ -57,11 +59,12 @@
   --button-hover-color: #000;
   --contour-heart-color: #00cc14;
   --filling-heart: #ff0000;
+  --button-text-color: #00cc14;
   --background-image: repeating-linear-gradient(
       to right,
-      #007f0c 0px 2px,
+      #000 0px 2px,
       transparent 2px 4px
     ),
-    repeating-linear-gradient(to top, #007f0c 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to top, #000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #007f0c, #004306);
 }

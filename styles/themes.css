@@ -5,14 +5,18 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 
-.theme-light {
-  --main-font-color: #000;
-  --accent-font-color: #000;
-  --background-color: #fff;
-  --border-color: #000;
-  --color-hover: rgba(0, 0, 0, 0.5);
+:root.theme-light {
+  --main-font: "Inter-Variable", sans-serif;
+  --main-color: #000;
+  --accent-font: "PressStart2P";
+  --accent-color: #000;
   --font-weight-regular: 400;
   --font-weight-large: 700;
+  --background-color: #fff;
+  --border-color: #000;
+  --color-hover: rgba(0, 0, 0, 0.6);
+  --button-hover-color: #fff;
+  --contour-heart-color: #000;
   --button-text-color: #fff;
   --background-image: repeating-linear-gradient(
       to right,
@@ -21,6 +25,31 @@
     ),
     repeating-linear-gradient(to top, #d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --watermark-border: #fff;
+  --contour-heart-color: #000;
+  --filling-heart: #ff0000;
+}
+
+:root.theme-dark {
+  --main-color: #00cc14;
+  --accent-color: #00cc14;
+  --background-color: #000;
+  --border-color: #00cc14;
+  --color-hover: rgba(0, 204, 20, 0.5);
+  --font-weight-regular: 465;
+  --font-weight-large: 785;
+  --watermark-border: #000;
+  --button-hover-color: #000;
+  --contour-heart-color: #00cc14;
+  --filling-heart: #ff0000;
+  --button-text-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #000 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #000 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,26 +74,4 @@
       repeating-linear-gradient(to top, #000 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #007f0c, #004306);
   }
-}
-
-.theme-dark {
-  --main-color: #00cc14;
-  --accent-color: #00cc14;
-  --background-color: #000;
-  --border-color: #00cc14;
-  --color-hover: rgba(0, 204, 20, 0.5);
-  --font-weight-regular: 465;
-  --font-weight-large: 785;
-  --watermark-border: #000;
-  --button-hover-color: #000;
-  --contour-heart-color: #00cc14;
-  --filling-heart: #ff0000;
-  --button-text-color: #00cc14;
-  --background-image: repeating-linear-gradient(
-      to right,
-      #000 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(to top, #000 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #007f0c, #004306);
 }

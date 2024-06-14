@@ -29,12 +29,12 @@
 }
 
 .header {
-  margin: 102px 0px;
-  width: clamp(22.9375rem, 15.7852rem + 30.5164vw, 43.25rem);
+  width: 100%;
+  margin: 100px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  outline: 2px solid var(--border-color);
+  border: 2px solid var(--border-color);
   text-align: center;
   background-color: var(--background-color);
   font-family: var(--accent-font, fantasy, sans-serif);
@@ -132,11 +132,11 @@
 
 /* Начало main */
 .main {
-  width: clamp(22.9375rem, 15.7852rem + 30.5164vw, 43.25rem);
+  width: 100%;
 }
 
 .card-title {
-  padding: 4px 10px 6px 6px;
+  padding: 4px 10px 3px 9px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.78px;
@@ -158,15 +158,16 @@
 
 .card-image__wrapper {
   position: relative;
-  border-top: 2px solid var(--border-color);
-  border-bottom: 2px solid var(--border-color);
+  outline: 2px solid var(--border-color);
+  /* border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color); */
 }
 
 .watermark {
   position: absolute;
   z-index: 1;
-  top: 20px;
-  right: 12px;
+  top: 25px;
+  right: 14px;
   font-family: var(--accent-font, fantasy, sans-serif);
   text-transform: uppercase;
   font-size: 14px;
@@ -306,7 +307,7 @@
 
 /* Modal */
 .modal {
-  padding: 30px 42px;
+  padding: 30px 32px;
   color: var(--main-color);
   background-color: var(--background-color);
   text-transform: uppercase;
@@ -332,7 +333,7 @@
 .modal-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .modal__icon {
@@ -392,7 +393,22 @@
   }
 
   .header {
+    /* margin: 102px 0px; */
+    width: clamp(22.9375rem, 15.7852rem + 30.5164vw, 43.25rem);
     margin-block-end: 107px;
+  }
+
+  .header-title {
+    margin-block-start: 142px;
+    margin-block-end: 16px;
+  }
+
+  .main {
+    width: clamp(22.9375rem, 15.7852rem + 30.5164vw, 43.25rem);
+  }
+
+  .card-title {
+    padding: 4px 10px 6px 6px;
   }
 
   .watermark {
@@ -400,13 +416,17 @@
     right: 25px;
   }
 
-  .modal {
-    max-width: 357px;
+  .footer-card {
+    margin-inline-end: 22px;
   }
 
-  .header-title {
-    margin-block-start: 142px;
-    margin-block-end: 16px;
+  .modal {
+    max-width: 357px;
+    padding: 30px 31px;
+  }
+
+  .modal-button {
+    width: 291px;
   }
 
   .button-save {
